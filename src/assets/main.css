@@ -1,0 +1,65 @@
+
+@import "tailwindcss";
+
+/* Réinitialisation générale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block;
+  margin: 0;
+}
+
+/* Correction des boutons et filtres */
+button {
+  min-height: 52px;
+  padding: 14px 28px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Boutons des catégories */
+.category-button {
+  min-width: 145px;
+  min-height: 58px;
+  padding: 16px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Conteneur des catégories */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
